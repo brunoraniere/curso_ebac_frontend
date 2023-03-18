@@ -4,16 +4,18 @@ const buttonSubmit = document.getElementById('button-submit');
 const message = document.getElementById('mensagem');
 const form = document.getElementById('form-test');
 
-buttonSubmit.addEventListener('submit', function(e){
+form.addEventListener('submit', e =>{
     
-    e.preventDefault;
+    e.preventDefault();
+    let numA = parseFloat(numberA.value);
+    let numB = parseFloat(numberB.value);
 
-    if(!IsNaN(numberA.value) && !IsNaN(numberB.value)){
-        if(numberB.value>numberA.value){
+    if(!isNaN(numA) && !isNaN(numB)){
+        if(numB>numA){
             message.innerHTML = `Nice! ${numberB.value} is <b>GREATER</b> than ${numberA.value}`;
             message.style.color = "#25ed3c";
         }
-        else if (numberB.value<numberA.value){
+        else if (numB<numA){
             message.innerHTML = `Ops! ${numberB.value} is <b>LESS</b> than ${numberA.value}`;
             message.style.color = "#ed2553";
         }

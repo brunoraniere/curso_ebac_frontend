@@ -49,14 +49,18 @@ section .forma-form{
     max-width: 460px;
     margin: auto;
     background-color: white;
-    padding: 0px 60px;
     margin-bottom: 100px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.087);
 }
 
+section .forma-form #form-test{
+    padding: 0 60px;
+}
+
 section .forma-form h2{
     padding: 80px 0px 50px 0px;
+    text-indent: 60px;
     font-weight: 600;
     color: #ed2553;
 }
@@ -99,6 +103,7 @@ section .forma-form form button:hover{
 section .forma-form form button:focus{
     border-color: #ed2553;
     outline-color: #ed2553;
+    color: #ed2553;
 }
 
 section .forma-form #mensagem{ 
